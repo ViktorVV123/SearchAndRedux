@@ -1,127 +1,135 @@
 import React, {ChangeEvent, useEffect, useState} from 'react';
-import {useAppDispatch, useAppSelector} from "../StoreAndRedux/hooks/redux";
-import {Fetch} from "../StoreAndRedux/Reducer/featch";
+import '../App.css'
 
-export const Main = () => {
-
-
-    const dispatch = useAppDispatch()
-    const {collections, isLoading, error} = useAppSelector(state => state.useReducer)
-
-
-    useEffect(() => {
-        dispatch(Fetch())
-    }, [])
+type MainType={
+    title:string
+    photos:string
+}
 
 
 
-    let [value,setValue] = useState('')
+export const Main = (props:MainType) => {
 
 
 
 
-    const onChangeHndler = (event:ChangeEvent<HTMLInputElement>) => {
+
+
+
+
+    let [value, setValue] = useState('')
+
+
+    const onChangeHndler = (event: ChangeEvent<HTMLInputElement>) => {
         setValue(event.currentTarget.value)
 
     }
 
 
-
     return (
         <div>
-            <input value={value} onChange={onChangeHndler} style={{margin: '10px'}} placeholder={'поиск...'} />
-            <div className="App">
-                {isLoading && <h1>Loading ...</h1>}
-                {error && <h1>что то сломалось...</h1>}
-                {collections.map((e) => {
-                    return (
-                        <div>
 
-                            {e.collections.filter((e)=>{
-                                return e.name.toLowerCase().includes(value.toLowerCase())
-                            }).map((e, index) => {
-                                return (
-                                    <div key={index}>
-                                        <div>
-                                            {e.name}
-                                        </div>
-                                        <div><img style={{height: '300px', width: '300px', borderRadius: '10px'}}
-                                                  src={e.photos[0]}/></div>
-                                        <div style={{display: "flex",justifyContent:'center'}}>
-                                            <img style={{
-                                                height: '100px',
-                                                borderRadius: '10px',
-                                                width: '100px',
-                                                margin: '5px'
-                                            }} src={e.photos[1]}/>
-                                            <img style={{
-                                                height: '100px',
-                                                borderRadius: '10px',
-                                                width: '100px',
-                                                margin: '5px'
-                                            }} src={e.photos[2]}/>
-                                            <img style={{
-                                                height: '100px',
-                                                width: '100px',
-                                                borderRadius: '10px',
-                                                margin: '5px'
-                                            }} src={e.photos[3]}/>
-                                        </div>
+            <div className={'collectionAll'}>
 
-                                    </div>
-                                )
-                            })}
-                        </div>
-                    )
-                })}
+                <div   >
+                    <h3 style={{textAlign:'center'}}>{props.title}</h3>
+                    <img className={'CollectionBig'}  src= {props.photos}/>
+
+                </div>
+
+
+                <div className={'collectionBottom'}>
+                    <img style={{
+                        height: '100px',
+                        borderRadius: '10px',
+                        width: '120px',
+                        margin: '5px'
+                    }} src= {props.photos[1]}/>
+                    <img style={{
+                        height: '100px',
+                        borderRadius: '10px',
+                        width: '120px',
+                        margin: '5px'
+                    }} src= {props.photos[2]}/>
+                  <img style={{
+                      height: '100px',
+                      borderRadius: '10px',
+                      width: '120px',
+                      margin: '5px'
+                  }} src= {props.photos[3]}/>
+                </div>
+
             </div>
         </div>
     );
 };
 
 /*
-<div>
-    <div className="App">
-        {isLoading && <h1>Loading ...</h1>}
-        {error && <h1>что то сломалось...</h1>}
-        {collections.map((e) => {
-            return (
-                <div>
+  <div>
 
-                    {e.collections.map((e, index) => {
+            <div>
+
+                <div style={{display: "flex", justifyContent: 'center'}}>
+                    <div style={{margin: '10px'}}>Все</div>
+                    <div style={{margin: '10px'}}>Горы</div>
+                    <div style={{margin: '10px'}}>Море</div>
+                    <div style={{margin: '10px'}}>Архитектура</div>
+                    <div style={{margin: '10px'}}>Города</div>
+                    <div><input value={value} onChange={onChangeHndler} style={{margin: '10px'}}
+                                placeholder={'поиск...'}/></div>
+                </div>
+
+                <div style={{display:'flex', flexWrap:'wrap'}}>
+                    {isLoading && <h1>Loading ...</h1>}
+                    {error && <h1>что то сломалось...</h1>}
+                    {collections.map((e) => {
                         return (
-                            <div key={index}>
-                                <div>
-                                    {e.name}
-                                </div>
-                                <div><img style={{height: '300px', width: '300px', borderRadius: '10px'}}
-                                          src={e.photos[0]}/></div>
-                                <div style={{display: "flex",justifyContent:'center'}}>
-                                    <img style={{
-                                        height: '100px',
-                                        borderRadius: '10px',
-                                        width: '100px',
-                                        margin: '5px'
-                                    }} src={e.photos[1]}/>
-                                    <img style={{
-                                        height: '100px',
-                                        borderRadius: '10px',
-                                        width: '100px',
-                                        margin: '5px'
-                                    }} src={e.photos[2]}/>
-                                    <img style={{
-                                        height: '100px',
-                                        width: '100px',
-                                        borderRadius: '10px',
-                                        margin: '5px'
-                                    }} src={e.photos[3]}/>
-                                </div>
+                            <div>
 
+                                {e.collections.filter((e) => {
+                                    return e.name.toLowerCase().includes(value.toLowerCase())
+                                }).map((e, index) => {
+                                    return (
+                                        <div key={index}>
+                                            <div>
+                                                {e.name}
+                                            </div>
+                                            <div style={{
+                                                display: 'flex',
+                                                justifyContent: 'center',
+                                                flexDirection: 'column'
+                                            }}>
+                                                <div>
+                                                    <img style={{height: '300px', width: '300px', borderRadius: '10px'}}
+                                                         src={e.photos[0]}/>
+                                                </div>
+                                                <div style={{display: "flex", justifyContent: 'center'}}>
+                                                    <img style={{
+                                                        height: '100px',
+                                                        borderRadius: '10px',
+                                                        width: '100px',
+                                                        margin: '5px'
+                                                    }} src={e.photos[1]}/>
+                                                    <img style={{
+                                                        height: '100px',
+                                                        borderRadius: '10px',
+                                                        width: '100px',
+                                                        margin: '5px'
+                                                    }} src={e.photos[2]}/>
+                                                    <img style={{
+                                                        height: '100px',
+                                                        width: '100px',
+                                                        borderRadius: '10px',
+                                                        margin: '5px'
+                                                    }} src={e.photos[3]}/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    )
+                                })}
                             </div>
                         )
                     })}
                 </div>
-            )
-        })}
-    </div>
-</div>*/
+            </div>
+        </div>*/
