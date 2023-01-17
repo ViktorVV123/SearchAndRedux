@@ -1,18 +1,20 @@
 import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
-import {collection} from "../typeAll/typeAll";
-import {Fetch} from "./featch";
+import {categoryes, collections} from "../typeAll/typeAll";
+import {Fetch, FetchCategory} from "./featch";
 
 
 export type UserState = {
-    collections: collection[],
+    categoryes: categoryes[],
+    collections: collections[],
     isLoading: boolean,
-    error: string
+    error: string,
+
 
 }
 
 export const initialState: UserState = {
-
+    categoryes:[],
     collections: [],
     isLoading: false,
     error: ''
@@ -21,9 +23,16 @@ export const initialState: UserState = {
 export const userSlice = createSlice({
     name: 'name',
     initialState,
-    reducers: {},
+    reducers: {
+/*CategoryFilter:(state, action)=>{
+    state.collections.map(e=>e.collections.filter(e=>e.category=== action.payload) )
+}*/
+    },
     extraReducers: {
-        [Fetch.fulfilled.type]: (state, action: PayloadAction<collection[]>) => {
+        [FetchCategory.fulfilled.type]: (state, action: PayloadAction<categoryes[]>) => {
+            state.categoryes=action.payload
+        },
+        [Fetch.fulfilled.type]: (state, action: PayloadAction<collections[]>) => {
             state.isLoading = false
             state.error = ''
             state.collections=action.payload

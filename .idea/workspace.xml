@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="244a02f8-3717-4e0c-9dfe-cacec7f763b2" name="Changes" comment="Merge remote-tracking branch 'origin/master'">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.test.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/App.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/hooks.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/app/store.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/features/counter/Counter.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/features/counter/Counter.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/features/counter/counterAPI.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/features/counter/counterSlice.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/features/counter/counterSlice.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/react-app-env.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/reportWebVitals.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/src/setupTests.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-app/tsconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/NavBAr.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/NavBAr.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreAndRedux/Reducer/featch.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreAndRedux/Reducer/featch.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreAndRedux/Reducer/reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreAndRedux/Reducer/reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StoreAndRedux/typeAll/typeAll.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/StoreAndRedux/typeAll/typeAll.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2KSZhvhjDYnFl18UMgaSURWBhWX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\itlesson\\my-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="244a02f8-3717-4e0c-9dfe-cacec7f763b2" name="Changes" comment="" />
+      <created>1673970071574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673970071574</updated>
+      <workItem from="1673970074828" duration="5754000" />
+      <workItem from="1674027824666" duration="27406000" />
+    </task>
+    <task id="LOCAL-00001" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1673970100681</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1673970100681</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Merge remote-tracking branch 'origin/master'">
+      <created>1673970115921</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1673970115921</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Merge remote-tracking branch 'origin/master'" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/master'" />
+  </component>
+</project>

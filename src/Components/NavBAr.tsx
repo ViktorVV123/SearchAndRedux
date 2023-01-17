@@ -5,16 +5,18 @@ import '../App.css'
 type NavBarType = {
 
     name: string
+    key: number
 }
 
 export const NavBAr = (props: NavBarType) => {
 
 
+
     return (
 
-        <div>
+        <div >
 
-           <div className={'categoryName'}>{props.name}</div>
+           <div  onClick={()=>props.key}>{props.name}</div>
 
 
         </div>

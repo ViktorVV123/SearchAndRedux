@@ -1,8 +1,5 @@
 .app{
-  background-color: rgba(77, 74, 74, 0.22);
-  padding: 50px;
-  width: 100%;
-  max-width: 1200px;
+
 }
 
 
@@ -34,9 +31,37 @@
   border-radius: 5px;
 }
 .categoryName{
+  margin: 20px;
   display: flex;
-  flex-direction: row;
-flex-wrap: wrap;
-margin: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
 
+}
+.divLi{
+  display: inline-block;
+  padding: 5px 16px;
+  background-color: #fff;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+:hover.divLi{
+  border: 1px solid #413f3f
+}
+.active {
+  display: inline-block;
+  padding: 5px 16px;
+  background-color: #000000;
+  border-radius: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid transparent;
+  transition: all 0.15s ease-in-out;
+  color:white;
 }

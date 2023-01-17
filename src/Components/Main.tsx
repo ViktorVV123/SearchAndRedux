@@ -4,6 +4,7 @@ import '../App.css'
 type MainType={
     title:string
     photos:string
+
 }
 
 
